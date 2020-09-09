@@ -41,6 +41,7 @@ nav{
     height: 3px;
     background-color: black;
     margin: 5px;
+    transition: all 0.3s ease;
 }
 
 /*---Media Queries---*/
@@ -77,4 +78,28 @@ nav{
 
 .nav-active{
     transform: translateX(0%)
+}
+
+
+/*------Animations---*/
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.toggle .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .bar2{
+    opacity: 0;
+}
+.toggle .bar3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }

@@ -1,0 +1,80 @@
+/*--------General--------*/
+*{
+    margin: 0px;
+}
+body{
+    font-family: 'Merriweather', serif;
+}
+/*--------Navbar---------*/
+nav{
+    display:flex;
+    justify-content: space-around;
+    background-color: #2DA195;
+    color: white;
+    min-height: 7vh;
+    align-items: center;
+    }
+.logo{
+    font-size: 20px;
+}
+.nav-links{
+    display:flex;
+    justify-content: flex-end;
+}
+.nav-links li{
+    list-style:none;
+    padding-left: 30px;
+}
+.nav-links a{
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+/*---Media Queries---*/
+
+@media screen and (max-width:1024px){
+
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+   .nav-links{
+       width: 35%;
+       position: absolute;
+       right: 0px;
+       top: 6vh;
+       height: 94vh;
+       background-color: #2DA195;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   } 
+   .nav-links li{
+       opacity: 0;
+   }
+   .burger{
+       display: block;
+       cursor: pointer;
+   }
+}
+
+.nav-active{
+    transform: translateX(0%)
+}

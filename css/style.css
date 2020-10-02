@@ -8,17 +8,17 @@ body{
 /*--------Navbar---------*/
 nav{
     display:flex;
-    justify-content: space-around;
     background-color: transparent;
     min-height: 7vh;
     align-items: center;
     z-index:2;
     }
-.logo{
+/* .logo{
+    font-family: 'Bangers', cursive;
     font-size: 28px;
     color: #efd3a6;
     z-index: 2;
-}
+} */
 .nav-links{
     display:flex;
     justify-content: flex-end;

@@ -9,28 +9,31 @@ body{
 nav{
     display:flex;
     justify-content: space-around;
-    background-color: #2DA195;
-    color: white;
+    background-color: transparent;
     min-height: 7vh;
     align-items: center;
+    z-index:2;
     }
 .logo{
-    font-size: 20px;
+    font-size: 28px;
+    color: #efd3a6;
+    z-index: 2;
 }
 .nav-links{
     display:flex;
     justify-content: flex-end;
+    z-index: 2;
 }
 .nav-links li{
     list-style:none;
-    padding-left: 30px;
+    padding-left: 41px;
 }
 .nav-links a{
     font-family: 'Mukta', sans-serif;
-    color: white;
+    color: #efd3a6;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
 .burger{
     display: none;
@@ -43,7 +46,294 @@ nav{
     margin: 5px;
     transition: all 0.3s ease;
 }
+/*---Title Section---*/
+.image-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+.hero-wrapper{
+    text-align: center;
+    position: absolute;
+    right: 900px;
+    top: 400px;
+}
 
+.hero-wrapper h3{
+    color: #efd3a6;
+    text-align: initial;
+    font-size: 90px;
+    position: absolute;
+    bottom: 2px;
+    right: 23px;
+}
+
+.hero-wrapper h4{
+    color: #efd3a6;
+    font-size: 60px;
+    position: absolute;
+    top: 92px;
+    line-height: 79px;
+    right: 262px;
+}
+
+.hero-wrapper ul{
+    list-style-type: none;
+    color: #efd3a6 ;
+    position: absolute;
+    right: 859px;
+    font-size: 32px
+}
+.social-icons i{
+    color: #efd3a6;
+}
+
+.social-icons li{
+    padding-bottom: 10px;
+}
+#contact-page{
+    position: absolute;
+    top: 306px;
+    right: 350px;
+    font-size: 20px;
+    color: #efd3a6;
+    text-decoration: none;
+    width: 150px;
+    border: 2px solid #efd3a6;
+    border-radius: 30px;
+    line-height: 38px;
+}
+.scroll-down a{
+    color: #efd3a6;
+    font-size: 31px;
+    position: absolute;
+    top: 382px;
+    line-height: 40px;
+    left: 718px;
+    padding-bottom: 54px;
+    text-decoration: none;
+}
+.title{
+    background-image: url("/images/profile-homepage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+
+/*---About Section---*/
+.about{
+    background-color: gainsboro;
+    padding-bottom: 40px;
+}
+.profile .container img{
+    text-align: center;
+    width: 200px;
+    margin-bottom: 28px;
+    border: 3px solid #efd3a6;
+    border-radius: 108px;
+}
+.profile .container h3{
+    padding: 40px 0;
+    font-weight: 100;
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+.profile .container {
+    display:flex;
+    justify-content: center;
+}
+.bio{
+    text-align: center;
+    margin:auto;
+    width:50%;
+    line-height: 30px;
+}
+
+.contact-button, .download-cv-button{
+    font-size: 20px;
+    text-decoration: none;
+    width: 150px;
+    border: 2px solid #26867c;
+    border-radius: 30px;
+    line-height: 38px;
+    margin: 15px 10px;
+    text-align: center;
+    color: #012b35c2;
+}
+/*---Skills Section---*/
+.skills{
+    margin-bottom: 30px;
+}
+.language img{
+    width:128px;
+    height:128px;
+}
+.language h3{
+    padding-left: 23px;
+    padding-top: 10px;
+}
+.skills-section{
+    display:grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:50px;
+    margin-left: 230px;
+}
+.grid-item{
+    display:grid;
+}
+.grid-item-1, .grid-item-4{
+    padding-left: 20px;
+}
+.skills h4{
+    display:flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 26px;
+    text-decoration: underline;
+    padding-top: 30px;
+    margin-bottom: 130px;
+}
+.skills .container{
+    display: flex;
+}
+.skills .container-title{
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.skills .container-title h5{
+    font-size: 22px;
+    text-align: center;
+    font-weight:200;
+    padding: 10px;
+}  
+.focus-bar div{
+    text-align:end; 
+}
+/*---Focus Bars--*/
+.bar-container{
+    display: flex;
+    padding-bottom: 11px;
+}
+.skills ::before, .skills ::after{
+    box-sizing: border-box;
+}
+.focus{
+    width:50%;
+}
+.focus-bar{
+    width: 450px;
+    height: 1.2em;
+    background-color:#d3d3d3;
+    padding: 5px 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+.bar-title{
+    height: 1.5em;
+    background-color: #40e0d0;
+    color: black;
+    padding-top: 5px;
+    width: 132px;
+    text-align: center;
+}
+.focus-bar::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -0.5em;
+    bottom: 0.0em;
+    width: calc(var(--focus, 0) *1%);
+    min-width: 2rem;
+    max-width: calc(100% - 1em);
+    height: 100%;
+    background-color: #26867c;
+}
+/*---Focus Percentage---*/
+.html-bar{
+    --focus:90;
+}
+.css-bar{
+    --focus:80;
+}
+.javascript-bar{
+    --focus:60;
+}
+.python-bar{
+    --focus:70;
+}
+.django-bar{
+    --focus:50;
+}
+.ux-design-bar{
+    --focus:60;
+}
+.procreate-bar{
+    --focus:40;
+}
+.photoshop-bar{
+    --focus:30;
+}
+/*---Projects---*/
+.projects{
+    margin: 50px 0;
+}
+.projects h2{
+    text-align: center;
+    font-weight: 100;
+    font-size: 26px;
+    text-decoration: underline;
+    padding-top: 30px;
+    margin-bottom: 130px;
+}
+.projects-row{
+    display: inline-flex;
+    justify-content: center;
+}
+.projects-row h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.project-card{
+    width: 20%;
+    background-color: #eeeeee45;
+}
+.project-card img{
+    width: 380px;
+}
+.card-2{
+    margin: 0px 120px;
+}
+.project-card p{
+    margin-top: 20px;
+    height: 110px;
+    text-align: center;
+    padding: 10px;
+}
+.project-card .container a{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    width: 150px;
+    border: 2px solid #26867c;
+    border-radius: 30px;
+    line-height: 38px;
+    padding: 5px 10px;
+    margin: 0 15px;
+}
+.project-card .container{
+    margin-top: 25px;
+    text-align: center;
+    }
 /*---Media Queries---*/
 
 @media screen and (max-width:1024px){

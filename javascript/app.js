@@ -1,3 +1,6 @@
+                                    
+                    //Nav Javascripy//
+
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -20,5 +23,15 @@ burger.addEventListener('click', () =>{
 
     });
 }
-
 navSlide();
+                //Progress Bar Slider//
+    // const focusBar = document.getElementsByClassName('focus-bars')[0];
+    // setInterval(()=>{
+    //     const computedStyle = getComputedStyle(focusBar)
+    //     const width = parseFloat(computedStyle.getPropertyValue('--focus')) || 0;
+    //     focusBar.style.setProperty('--focus', width + .1);
+        
+    // }, 5);
+    // if ('--focus' == width){
+    //         clearInterval(focusBar);
+    //     };//

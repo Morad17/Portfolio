@@ -19,6 +19,12 @@ nav{
     color: #efd3a6;
     z-index: 2;
 } */
+.nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #012b35;
+}
 .nav-links{
     display:flex;
     justify-content: flex-end;
@@ -168,7 +174,7 @@ nav{
 }
 /*---Skills Section---*/
 .skills{
-    margin-bottom: 30px;
+    margin-bottom: 300px;
 }
 .language img{
     width:128px;
@@ -198,7 +204,7 @@ nav{
     font-size: 26px;
     text-decoration: underline;
     padding-top: 30px;
-    margin-bottom: 130px;
+    margin-bottom: 230px;
 }
 .skills .container{
     display: flex;
@@ -284,7 +290,7 @@ nav{
 }
 /*---Projects---*/
 .projects{
-    margin: 50px 0;
+    margin: 50px 0 300px 0;
 }
 .projects h2{
     text-align: center;
@@ -336,6 +342,7 @@ nav{
     }
 /*---Contact Me---*/
 .contact-form{
+    margin-bottom: 50px;
     margin-top:100px;
     display:flex;
     justify-content: center;
@@ -396,7 +403,27 @@ nav{
     outline: none;
     background-color: #efd3a6;
 }
-
+/*---Footer---*/
+.footer{
+   background-color: #26867c; 
+}
+.footer .container{
+    display: block;
+    text-align: center;
+}
+.footer .social-icons{
+    list-style: none;
+    display: inline-block;
+}
+.footer .social-icons li{
+    padding-top: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    font-size: 37px;
+}
+.footer p{
+padding: 20px 0 30px 0;
+}
 /*---Hover / Effects---*/
 
 .button:hover{
@@ -405,7 +432,9 @@ nav{
     transition-duration: 500ms;
 }
 
-
+.scroll-down a{
+    transition: all 1s ease-in;
+}
 /*---Media Queries---*/
 
 @media screen and (max-width:1024px){
@@ -419,9 +448,13 @@ nav{
     bottom:0;
 }
 .hero-wrapper h3, .hero-wrapper h4{
-    line-height: 84px;
-    font-size: 42px;
+    padding-top: 45px;
+    line-height: 85px;
+    font-size: 35px;
     margin-left: 15px;
+}
+.hero-wrapper h4{
+    padding-top: 200px;
 }
 .nav-links li {
     list-style: none;
@@ -437,6 +470,9 @@ nav{
 background-position: 75%;
 }
 /*---Skills Section---*/
+.container-title{
+    display: none;
+}
 .skills-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -530,4 +566,37 @@ background-position: 75%;
 }
 .toggle .bar3{
     transform: rotate(45deg) translate(-5px,-6px);
-} */
+} --*/
+}
+
+@media screen and (max-width: 1366px) and (min-width: 650px){
+
+/*---Skills and Focus---*/
+.grid-item-4{
+    padding-left: 0;
+}
+.skills .container{
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1020px){
+
+/*---Skills and Focus---*/
+.grid-item-4{
+    padding-left: 0;
+}
+.skills .container{
+    display: flex;
+    justify-content: center;
+}
+.skills-section{
+    margin-left: 70px;
+}
+.focus{
+    margin-right: -100px;
+}
+
+}

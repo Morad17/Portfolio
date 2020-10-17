@@ -435,6 +435,41 @@ padding: 20px 0 30px 0;
 .scroll-down a{
     transition: all 1s ease-in;
 }
+/*---Animation---*/
+.hero-wrapper{
+    animation: homeIn 2.25s;
+}
+.nav-links{
+    animation: navIn 2.25s;
+}
+
+
+@keyframes homeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes navIn {
+    from {
+        opacity: 0;
+        transform: translateX( 500px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+}
+
+
 /*---Media Queries---*/
 
 @media screen and (max-width:1024px){

@@ -271,6 +271,9 @@ nav{
     --focus:80;
 }
 .javascript-bar{
+    --focus:80;
+}
+.react-bar{
     --focus:60;
 }
 .python-bar{
@@ -311,6 +314,7 @@ nav{
 .project-card{
     width: 20%;
     background-color: #eeeeee45;
+    margin: 0 30px;
 }
 .project-card img{
     width: 380px;
